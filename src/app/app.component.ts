@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+  <p>
+    {{title}}
+  </p>`
 })
 export class AppComponent {
-  title = 'profanis';
+  title = environment.API_KEY;
+
 }
